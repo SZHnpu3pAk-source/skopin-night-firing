@@ -21,7 +21,7 @@ std::optional<std::string> validateWare(const Ware& ware) {
 }
 
 bool fitsInKiln(const std::vector<Ware>& stack, const Ware& next) {
-    long long height = next.height_cm;
+    int height = next.height_cm;
     for (const Ware& ware : stack) {
         height += ware.height_cm;
         height += kShelfCm;
